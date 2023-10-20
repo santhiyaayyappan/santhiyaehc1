@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDUCATION WEBSITE</title>
+ </head>   
+    <body>
+        
+        <header>
+        <h1> SAN INSTITUTION </h1>
+        <h3><P>Arts and Science</P></h3>
+        </header>
+        <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        </nav>
+        <h2 style="text-align: center;"></style>SAN INSTITUTION OF ARTS AND SCIENCE</h2>
+  <p>SAN INSTITUTION provides a world class business education.
+    The Mission of SAN INSTITUTION is to provide outstanding academic support and training to the students in an unmatched environment. We provide in-depth career counselling, broad exposure to a variety of industries and career paths, and exceptional opportunities to network with potential hiring firms</p>
+    <button type="button">REGISTER</button>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #e1a4e0;
+    width: 100%;
+    height:90vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    background-color: #c390ce;
+    color: #13020f;
+    padding: 20px;
+    text-align: center;  
+  }
+  
+  h1 {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  nav {
+    background-color: #d113b2;
+    color: #e1a4e0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav {
+    color: #522752;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  button{
+  text-align: center;
+  padding: 20px 40px;
+  background: transparent;
+  border: 3px solid rgb(12, 12, 12);
+  color: #3a2828;
+  font-size: 16px;
+  border-radius:25px ;
+  cursor:pointer;
+  }
+  btn button::after{
+   content:' ';
+   position: center;
+   width: 0%;
+   height:100%;
+   background:rgb(85, 86, 85);
+   left:0;
+   top:0;
+   z-index: -1;
+   transition:.5 all;
+  }
+  
+  footer {
+    background-color: #451539;
+    color: #bdb7b7;
+    padding: 10px 10px 0px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 140px ;
+  }
+    </style>
+ <section>
+        <h2>REGISTRATION FORM</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+<br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+<br>
+            <label for="telephone">Telephone:</label>
+            <input type="text" id="telephone" name="telephone" required>
+<br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+<br>
+            <label for="course">Select a Course:</label>
+            <select id="course" name="course" required>
+                <option value="Bsc.IT">Bsc.IT</option>
+                <option value="Bsc.CS">Bsc.CS</option>
+                <option value="Bsc.MATHS">Bsc.MATHS</option>
+                <option value="Bcom.CA">Bcom.CA</option>
+                <option value="BBA">BBA</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+<br>
+            <label for="state"> Select the State:</label>
+            <select id="state" id="state" name="state" required>
+                <option value="TAMILNADU">TAMILNADU</option>
+                <option value="KERALA">KERALA</option>
+                <option value="KARNATAKA">KARNATAKA</option>
+                <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                <option value="DELHI">DELHI</option>
+                <option value="GUJARAT">GUJARAT</option>
+                <option value="ASSAM">ASSAM</option>
+<br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <h1>Contact Us</h1>
+          Ph.no:+91 8967045312, +91 9943053737
+          Mavuthampatty Village,Coimbatore,Tamilnadu-643006,India
+          md@sreemman.com 
+        <background-color:#13020f></background-color:>
+        <p>&copy;SANTHIYA</p>
+        <p>EMERALD HEIGHTS COLLEGE FOR WOMEN.ALL RIGHTS RESERVED</p>
+      </footer>
+
+    <script>
+        // JavaScript for form validation
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const Telephone = document.getElementById("Telephone").value;
+
+            if (name.trim() === "" || email.trim() === "" || Telephone.trim() === "") {
+                alert("Name and email are required fields.");
+                alert("Telephone should be a number.");
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+</body>
+</html>
